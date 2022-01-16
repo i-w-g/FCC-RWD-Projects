@@ -2,66 +2,96 @@
 <html>
 	<head>
 	<style>
+		#main {
+			background: linear-gradient(20deg, #FDB927, #552583);
+		}
 		.container {
-			border-radius: 10px;
 			font-family: sans-serif;
-			font-size: 1em;;
+			font-size: 1.5;
 			width: 90%;
-			background-color: darkgray;
-			padding: 0.5em;
+			background-color: black;
+			padding-left: 0.5em;
+			padding-right: 0.5em;
 			margin-left: 3em;
 			margin-right: 3em;
 			display: grid;
 			grid-gap: 0.5em;
 			grid-template-columns: 1fr 4fr;
-			grid-template-rows: auto 2fr;
+			grid-template-rows: auto 3fr;
 			grid-template-areas: 
 				"top top"
 				"side content";
 		}
+		#img-div {
+			
+		}
+		#image {
+			
+		}
+		#img-caption {
+			font-size: inherit;
+			
+		}
 		.topSectionCell {
-			border-radius: inherit;
+			border-radius: 5px;
 			background-color: lightgray;
 			grid-area: top;
-			font-size: 1.5em;
+			font-size: 1.5vw;
 			text-align: center;
 			padding: inherit;
 		}
-		.kobeFacts {
+		#tribute-info {
+			font-size: 1.5vw;
 			border-radius: inherit;
 			background-color: gray;
 			grid-area: content;
 			text-align: left;
 			padding: inherit;
-			padding-left: 4em
+			padding-left: 4em;
 		}
-		.legacy {
-			background-color: inherit;
+		#tribute-link {
 			
 		}
+		#title {
+			padding-top: 1em;
+			font-size: 2vw;
+		}
 		.sidebar {
+			font-size: 1.5vw;
 			background-color: white;
 			grid-area: side;
 			padding: inherit;
 			text-align: end
 		}
 		h1 {
-			font-size: 25px;
-			font-style: italic;
-			
+			font-size: 4vw;
+			background-color: #FDB927;
+		}
+		#center {
+			text-align: center;
 		}
 	</style>
 	</head>
 	<main>
+	<div id="main">
 		<div class="container">
 			<div class="topSectionCell">
-				<img src="https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5fad975faa9c4c321e144b8d%2F0x0.jpg%3FcropX1%3D0%26cropX2%3D3000%26cropY1%3D205%26cropY2%3D1893" align="center" width="75%"> 
-				<br>
-				Kobe Bryant: a tribute
+				<div class="img-div">
+					<img id="image" src="kobe.jpeg" align="center" width="90%" height="auto" alt="Kobe Bryant dribbling a basketball">
+					<div id="img-caption">
+						Kobe Bryant shown above
+					</div>
+				</div>
+				<h1>
+					Kobe Bryant: a tribute
+				</h1>
 			</div>
-			<div class="kobeFacts">
-				<h1>Facts about Kobe Bryant</h1>
+			<div id="tribute-info">
+				<div id="title">
+					Kobe Bryant is a former NBA superstar, who played his entire career (20 years) for the Los Angeles Lakers. He leaves behind a legacy that represents hard work, loyalty, respect, and dedication to his craft.
+				</div>
 				<ul>
+					
 					<li>5x NBA Finals Champion</li>
 					<li>2x NBA Finals MVP</li>
 					<li>18x NBA All Star</li>
@@ -70,8 +100,13 @@
 					<li>2x NBA Scoring Champion</li>
 					
 				</ul>
+				<br>
+				For more info and stats, click <a id="tribute-link" href="https://www.basketball-reference.com/players/b/bryanko01.html" target="_blank">here</a>.
 			</div>
-			<div class="sidebar">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+			<div class="sidebar">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
 		</div>
+	</div>
 	</main>
 </html>
