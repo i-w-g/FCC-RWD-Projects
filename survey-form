@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+	<style>
+		body {
+			background-color: darkGray;
+			font-family: monospace;
+		}
+		h1 {
+			font-size: 2.25em;
+		}
+		h2 {
+			font-size: 1.4em;
+		}
+		#container {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			margin: auto;
+			padding: 1vw;
+			grid-gap: 1vw;
+			width: 75%;
+			height: auto;
+			background: white;
+			
+		}
+		#title {
+			width: 100%;
+			height: auto;
+			background: lightGray;
+		}
+		#description {
+			width: 100%;
+			height: auto;
+			background: lightBlue;
+		}
+    
+    #survey {}
+		#survey-form {
+			text-align: left;
+			display: flex;
+			flex-direction: column;
+			grid-gap: 1vw;
+			width: 100%;
+			height: auto;
+			background: inherit;
+		}
+		
+		#name-label {
+			padding: 3px;
+			background: lightGray;
+		}
+		#name {}
+		#radio-group {
+			text-align: center;
+			display: flex;
+			flex-direction: row;
+			grid-gap: 15px;
+		}
+		#employer {}
+		#colleague {}
+		#coworker {}
+		#recruiter {}
+		#mentor {}
+		#other {}
+		
+		#email-label {
+			padding: 3px;
+		}
+		#email {}
+		
+		#number-label {
+			background: lightGray;
+			padding: 3px;
+		}
+		#number {}
+		#checkbox-group {
+			text-align: center;
+			display: flex;
+			flex-direction: row;
+			grid-gap: 15px;
+		}
+		#cellph {}
+		#workph {}
+		#officeph {}
+		
+		#dropdown {
+			
+		}
+		#submit {
+			background: lightCoral;
+		}
+		#addcomment-label {
+			margin-top: 20px;
+			padding: 3px;
+			background: lightGray;
+		}
+		#addcomment{}
+		#prefered {
+			padding: 3px;
+		}
+	</style>
+	<head>
+		
+	</head>
+	<body>
+		<div id="container">
+			
+      <h1 id="title">Contact Form</h1>
+			<p id="description">
+				Please leave your contact information so we can get in touch. Look foward to speaking with you!
+			</p>
+			<div id="survey">
+				<form id="survey-form">
+					<label id="name-label">
+						<h2>Name: </h2>
+						<input id="name" type="text" placeholder="Name" required>
+						<div id="radio-group">
+						<label for="employer">
+							<input id="employer" type="radio" name="practice" value="employer">Employer
+						</label>
+						<label for="recruiter">
+							<input id="recruiter" type="radio" name="practice" value="recruiter">Recruiter
+						</label>
+						<label for="colleague">
+							<input id="colleague" type="radio" name="practice" value="colleague">Colleague
+						</label>
+						<label for="coworker">
+							<input id="coworker" type="radio" name="practice" value="coworker">Coworker
+						</label>
+						<label for="mentor">
+							<input id="mentor" type="radio" name="practice" value="mentor">Mentor
+						</label>
+						<label for="other">
+							<input id="other" type="radio" name="practice" value="other">Other
+						</label>
+						</div>
+					</label>
+					<label id="email-label">
+						<h2>Email: </h2>
+						<input id="email" type="email" placeholder="Email" required>
+					</label>
+					<label id="number-label">
+						<h2>Number: </h2>
+						<input id="number" type="number" placeholder="Number" required min="1111111111" max="9999999999">
+						<div id="checkbox-group">
+							<label for="cellph">
+								<input id="cellph" type="checkbox" name="phonetype" value="cellPhone">cell
+							</label>
+							<label for="workph">
+								<input id="workph" type="checkbox" name="phonetype" value="workPhone">work
+							</label>
+						</div>
+					</label>
+					<div id="prefered">
+						<h2>preferred method of contact:</h2>
+						<select id="dropdown"> 
+							<option value="email">email</option>
+							<option value="phone">phone</option>
+							<option value="text">text</option>
+						</select>
+					</div>
+					<div id="addcomment-label">
+						<label for="addcomment">notes
+							<textarea id="addcomment" rows="3" cols="50"></textarea>
+						</label>
+					</div>
+					<button id="submit" type="submit">Send</button>
+				</form>
+			</div>
+			
+		</div>
+	</body>
+	
+	
+	
+</html>
