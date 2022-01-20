@@ -110,11 +110,11 @@
 				Please leave your contact information so we can get in touch. Look foward to speaking with you!
 			</p>
 			<div id="survey">
-				<form id="survey-form">
+				<form id="survey-form" action="mailto:isaac.graves1999@gmail.com" method="post" enctype="multipart/form-data">
 					<label id="name-label">
 						<h2>Name: </h2>
 						<input id="name" type="text" placeholder="Name" required>
-						<div id="radio-group">
+						<div id="radio-group" required>
 						<label for="employer">
 							<input id="employer" type="radio" name="practice" value="employer">Employer
 						</label>
@@ -164,7 +164,7 @@
 							<textarea id="addcomment" rows="3" cols="50"></textarea>
 						</label>
 					</div>
-					<button id="submit" type="submit">Send</button>
+					<input id="submit" type="submit" value="Submit">
 				</form>
 			</div>
 			
