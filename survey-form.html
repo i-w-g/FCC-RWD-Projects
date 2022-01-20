@@ -137,23 +137,23 @@
 					</label>
 					<label id="email-label">
 						<h2>Email: </h2>
-						<input id="email" type="email" placeholder="Email" required>
+						<input id="email" type="email" placeholder="Email" name="email" required>
 					</label>
 					<label id="number-label">
-						<h2>Number: </h2>
-						<input id="number" type="number" placeholder="Number" required min="1111111111" max="9999999999">
+						<h2>Phone Number: </h2>
+						<input id="number" type="number" name="number" placeholder="Number" required min="1111111111" max="9999999999">
 						<div id="checkbox-group">
 							<label for="cellph">
-								<input id="cellph" type="checkbox" name="phonetype" value="cellPhone">cell
+								<input id="cellph" type="checkbox" name="phone type" value="cell phone">cell
 							</label>
 							<label for="workph">
-								<input id="workph" type="checkbox" name="phonetype" value="workPhone">work
+								<input id="workph" type="checkbox" name="phone type" value="work phone">work
 							</label>
 						</div>
 					</label>
 					<div id="prefered">
 						<h2>preferred method of contact:</h2>
-						<select id="dropdown"> 
+						<select id="dropdown" name="prefered contact method"> 
 							<option value="email">email</option>
 							<option value="phone">phone</option>
 							<option value="text">text</option>
@@ -161,7 +161,7 @@
 					</div>
 					<div id="addcomment-label">
 						<label for="addcomment">notes
-							<textarea id="addcomment" rows="3" cols="50"></textarea>
+							<textarea id="addcomment" name="additional comments" rows="3" cols="50"></textarea>
 						</label>
 					</div>
 					<input id="submit" type="submit" value="Submit">
