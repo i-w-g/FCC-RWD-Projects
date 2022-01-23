@@ -8,10 +8,13 @@
 		}
 		content {
 			display: flex;
-			flex-direction: rows;
+			flex-direction: column;
+		}
+		h1 {
+			font-size: 4vw;
 		}
 		#container {
-			height: 1000px;
+			height: auto;
 			width: 80%;
 			display: flex;
 			flex-direction: column;
@@ -57,6 +60,15 @@
 		#video {
 			max-height: 400px;
 		}
+		#sections {
+			font-size: 2vw;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		#first-section {}
+		#second-section {}
+		#third-section {}
 		#form {
 			height: 50px;
 			width: 250px;
@@ -74,21 +86,54 @@
 			<header id="header">
 				<img id="header-img" src="favicon.png">
 					<nav id="nav-bar">
-						<a id="nav-link" href="#first">first</a>
-						<a id="nav-link" href="#second">second</a>
-						<a id="nav-link" href="#third">third</a>
+						<a class="nav-link" href="#first">first</a>
+						<a class="nav-link" href="#second">second</a>
+						<a class="nav-link" href="#third">third</a>
 					</nav>
 			</header>
-			<div id="div-video">
-				<video id="video" width="50%" height="auto" controls>
-					<source src="luka-highlight.mp4" type="video/mp4">
-					There would be a video of Luka here
-				</video>
-			</div>
 			<content>
-				<section id="first">
-				THIS IS THE FIRST SECTION OF THE PAGE
-				</section>
+				<div id="div-video">
+					<video id="video" width="50%" height="auto" controls>
+						<source src="luka-highlight.mp4" type="video/mp4">
+						There would be a video of Luka here
+					</video>
+				</div>
+				<div id="sections">
+					<div id="first-section">
+						<section id="first">
+							<h1>First Section Heading</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque odio at dolor elementum semper. Donec congue vel purus vel consequat. Pellentesque rhoncus purus ut purus iaculis consectetur. Integer interdum, nibh in imperdiet varius, dolor elit sodales mi, id egestas neque augue dignissim nibh. Sed convallis accumsan tempus. Mauris massa magna, faucibus non vehicula vitae, sodales ac enim. Suspendisse tempor quam augue, sit amet tristique dui tincidunt eget.</p>
+
+							<p>Donec eget orci magna. Vestibulum elementum mi ut neque vestibulum aliquet. Sed interdum quam ac sollicitudin bibendum. Pellentesque metus nisl, consequat a nisi vitae, efficitur varius turpis. Phasellus mollis risus vel ex facilisis egestas. In interdum porttitor tempus. Mauris feugiat risus non ante luctus mattis. Nullam nibh metus, ultrices ut nulla nec, scelerisque suscipit nulla.</p>
+
+							<p>Integer in pharetra nulla. Ut viverra eleifend nisi non maximus. Donec id leo dolor. Integer vitae lacinia ex. Suspendisse mollis aliquet diam vel commodo. Suspendisse sed purus volutpat, interdum massa vel, maximus nisi. Vestibulum at mauris ac metus maximus cursus. Nulla a ornare sapien.</p>
+						</section>
+					</div>
+					<div id="second-section">
+						<section id="second">
+							<h1>Second Section Heading</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque odio at dolor elementum semper. Donec congue vel purus vel consequat. Pellentesque rhoncus purus ut purus iaculis consectetur. Integer interdum, nibh in imperdiet varius, dolor elit sodales mi, id egestas neque augue dignissim nibh. Sed convallis accumsan tempus. Mauris massa magna, faucibus non vehicula vitae, sodales ac enim. Suspendisse tempor quam augue, sit amet tristique dui tincidunt eget.</p>
+
+							<p>Donec eget orci magna. Vestibulum elementum mi ut neque vestibulum aliquet. Sed interdum quam ac sollicitudin bibendum. Pellentesque metus nisl, consequat a nisi vitae, efficitur varius turpis. Phasellus mollis risus vel ex facilisis egestas. In interdum porttitor tempus. Mauris feugiat risus non ante luctus mattis. Nullam nibh metus, ultrices ut nulla nec, scelerisque suscipit nulla.</p>
+
+							<p>Integer in pharetra nulla. Ut viverra eleifend nisi non maximus. Donec id leo dolor. Integer vitae lacinia ex. Suspendisse mollis aliquet diam vel commodo. Suspendisse sed purus volutpat, interdum massa vel, maximus nisi. Vestibulum at mauris ac metus maximus cursus. Nulla a ornare sapien.</p>
+						</section>
+					</div>
+					<div id="third-section">
+						<section id="third">
+							<h1>Third Section Heading</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non odio consequat, laoreet nisi sed, lobortis nunc. Aenean rutrum augue arcu, vitae vulputate lacus lacinia eu. Vestibulum quis bibendum massa, sed vulputate elit. Donec tincidunt tempus erat. Sed maximus, orci sed pulvinar commodo, odio augue condimentum nunc, non fermentum erat enim nec sem. Suspendisse eget mauris sed nulla mattis egestas. Nam eu metus in massa porta vulputate. Vivamus sit amet turpis eget dui ultricies efficitur quis at arcu. Vestibulum porta, magna non pretium suscipit, leo ligula vehicula lorem, pulvinar varius nisl est vitae urna. Ut feugiat dolor a nulla auctor, ut tristique enim iaculis. Integer sed erat finibus, aliquet nunc tincidunt, volutpat urna. Suspendisse commodo augue risus.</p>
+
+							<p>Etiam nec ornare nisi. Duis id purus eu neque accumsan ultricies. Fusce libero odio, tincidunt at consectetur a, scelerisque ac augue. Fusce eleifend rutrum erat a tincidunt. Sed a rhoncus lectus. Aliquam massa mi, imperdiet ut gravida vitae, varius tempus mauris. Ut sed aliquet sem. Phasellus laoreet euismod dui non auctor. Phasellus non blandit urna, et iaculis erat. Aliquam leo ipsum, laoreet et consectetur id, posuere et sem. In hac habitasse platea dictumst. In molestie nulla eu lectus venenatis iaculis vitae vitae tortor. Mauris pulvinar pellentesque enim, sit amet pharetra dolor lacinia quis.</p>
+
+							<p>Pellentesque venenatis velit id ex ultrices, id maximus tellus eleifend. Etiam malesuada massa sed ipsum interdum, a tincidunt nunc sagittis. Donec imperdiet dui non malesuada eleifend. Cras imperdiet sagittis sem id feugiat. Vestibulum cursus id augue eu placerat. Pellentesque a cursus magna. Nullam vulputate sapien feugiat nisl pulvinar, sed tristique leo placerat. Aliquam vestibulum ac risus at lobortis. Suspendisse blandit varius sapien sit amet hendrerit. Duis ultrices lacus congue nisl placerat iaculis. Morbi tortor erat, convallis eu leo sed, varius eleifend massa. Phasellus elementum pellentesque ante eget porttitor. Curabitur dapibus vehicula ante, in dictum arcu bibendum a. Nam ultrices quam neque, id tempor dolor dictum non.</p>
+
+							<p>Pellentesque pulvinar ante nec leo aliquam, sit amet varius erat iaculis. Pellentesque id dolor sem. Duis a enim vitae sapien accumsan venenatis vel at nulla. Vestibulum gravida diam quis lorem hendrerit, quis egestas neque gravida. Morbi eu eros vitae magna imperdiet bibendum. Curabitur sed hendrerit mi, vitae convallis dolor. Nunc ac pulvinar nulla. Praesent neque nisi, malesuada sit amet est sit amet, venenatis ullamcorper nisl. Curabitur malesuada mi odio, hendrerit sagittis mauris tempor non.</p>
+
+							<p>Quisque vitae sem est. Morbi ut nisi id urna euismod malesuada vitae vitae purus. Nunc et lectus eget elit aliquam malesuada. Duis efficitur non nunc et fermentum. Nunc vitae cursus tellus. Cras egestas aliquam odio, sed sagittis nisi porta sit amet. Praesent id enim maximus, tincidunt erat vitae, tincidunt nisi. Aliquam ex nibh, dapibus in turpis ut, vehicula posuere nisl. Nullam convallis nulla at metus laoreet, eu luctus nibh ullamcorper. Vestibulum maximus euismod nibh et dictum. In vehicula sed lacus a egestas. Mauris vitae porttitor urna. Quisque sit amet arcu sit amet risus fermentum elementum non non est. Vivamus mollis tristique nibh, non ullamcorper turpis tristique ut.</p>
+						</section>
+					</div>
+				</div>
 			</content>
 <!--	set action to mail to my email address				-->
 			<form id="form" method="post">
